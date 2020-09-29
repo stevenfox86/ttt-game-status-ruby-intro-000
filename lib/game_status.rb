@@ -35,6 +35,7 @@ def won?(board)
 end
 
 def full?(board)
+<<<<<<< HEAD
   board.all? do |full|
     full == "X" || full == "O"
 # else !position_taken?(board, index)
@@ -78,3 +79,11 @@ end
 #     return board[board[0]]
 #   end
 # end
+=======
+  [board].all? do |full|
+    if full == position_taken?[board]
+  return true
+  end
+ end
+end
+>>>>>>> 422ef6e5f9d00400b42882689de8285747a2e194
